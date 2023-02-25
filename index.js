@@ -272,11 +272,16 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yapın.
 */
 
 
-function sesliHarfSayaci(sesliHarf) {
+function sesliHarfSayaci(metin) {
   /*buraya kodunu yazabilirsin*/
-}
-
-
+  let sesliler = metin.split("");
+  let sayac = 0;  
+  sesliler.forEach((harf)=>{
+  if((/[a/e/ı/i/o/ö/u/ü/A/E/I/İ/O/Ö/U/Ü]/).test(harf))
+  {sayac++}  
+  })
+  return sayac;}
+console.log(sesliHarfSayaci("Papua Yeni Ginelileştiremediklerimizden misiniz?"));
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
 function sa(){
