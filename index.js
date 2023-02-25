@@ -240,24 +240,21 @@ function notHesapla(not){
 /*buraya kodunu yazabilirsin*/
 
 if (90<=not||not>=100){
-  console.log("A aldın")
+  return "A aldın"
 }
 else if (80<=not||not>=89){
-  console.log("B aldın")
+  return "B aldın"
 }
 else if (70<=not||not>=79){
-  console.log("C aldın")
+  return "C aldın"
 }
 else if (60<=not||not>=69){
-  console.log("D aldın")
+  return "D aldın"
 }
-else {
-  console.log("F aldın")
-}
-
+else {return "F aldın"}
 }
 
-notHesapla(90);
+console.log(notHesapla(90));
 
 
 
